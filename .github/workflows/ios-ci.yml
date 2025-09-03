@@ -23,7 +23,7 @@ jobs:
         id: detect
         shell: bash
         run: |
-          set -euo pipefail
+          set -eo pipefail
           shopt -s globstar nullglob
 
           # 1) Locate workspace/project anywhere in the repo
@@ -73,11 +73,12 @@ jobs:
       - name: Build (generic iOS Simulator, no code signing)
         shell: bash
         run: |
-          set -euo pipefail
+          set -eo pipefail
           DEST='generic/platform=iOS Simulator'
-          if [[ -n "${{ steps.detect.outputs.workspace || '' }}" ]]; then
+          WS="${{ steps.detect.outputs.workspace }}"
+          if [[ -n "$WS" ]]; then
             xcodebuild \
-              -workspace "${{ steps.detect.outputs.workspace }}" \
+              -workspace "$WS" \
               -scheme    "${{ steps.detect.outputs.scheme }}" \
               -configuration Release \
               -destination "$DEST" \
