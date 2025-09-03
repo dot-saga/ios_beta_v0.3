@@ -7,6 +7,7 @@
 
 import Foundation
 import AppIntents
+import OSLog
 
 struct ShutDownNodeIntent: AppIntent {
 	static let title: LocalizedStringResource = "Shut Down"
@@ -21,16 +22,23 @@ struct ShutDownNodeIntent: AppIntent {
 		}
 
 		// Safely unwrap the connectedNode using if let
-		if let connectedPeripheralNum = await AccessoryManager.shared.activeDeviceNum,
-		   let connectedNode = getNodeInfo(id: connectedPeripheralNum, context: PersistenceController.shared.container.viewContext),
-		   let fromUser = connectedNode.user,
-		   let toUser = connectedNode.user {
+		if let connectedPeripheralNum = await AccessoryManager.shared.activeDeviceNum {
+			// Perform Core Data operations on the main actor
+			await MainActor.run {
+				if let connectedNode = getNodeInfo(id: connectedPeripheralNum, context: PersistenceController.shared.container.viewContext),
+				   let fromUser = connectedNode.user,
+				   let toUser = connectedNode.user {
 
-			// Attempt to send shutdown, throw an error if it fails
-			do {
-				try await AccessoryManager.shared.sendShutdown(fromUser: fromUser, toUser: toUser)
-			} catch {
-				throw AppIntentErrors.AppIntentError.message("Failed to shut down")
+					// Attempt to send shutdown, throw an error if it fails
+					Task {
+						do {
+							try await AccessoryManager.shared.sendShutdown(fromUser: fromUser, toUser: toUser)
+						} catch {
+							// Handle error on main actor
+							Logger.services.error("Failed to shut down: \(error.localizedDescription, privacy: .public)")
+						}
+					}
+				}
 			}
 		} else {
 			throw AppIntentErrors.AppIntentError.message("Failed to retrieve connected node or required data")

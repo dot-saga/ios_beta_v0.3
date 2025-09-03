@@ -8,6 +8,20 @@
       buildArchitectures = "Automatic">
       <BuildActionEntries>
          <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
+               BuildableName = "dot SAGA.app"
+               BlueprintName = "dot SAGA"
+               ReferencedContainer = "container:Meshtastic.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
@@ -18,7 +32,7 @@
                BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
                BuildableName = "dot SAGA.app"
                BlueprintName = "dot SAGA"
-               ReferencedContainer = "container:Meshtastic.xcodeproj">
+               ReferencedContainer = "container:dot SAGA.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +61,7 @@
             BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
             BuildableName = "dot SAGA.app"
             BlueprintName = "dot SAGA"
-            ReferencedContainer = "container:Meshtastic.xcodeproj">
+            ReferencedContainer = "container:dot SAGA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -57,16 +71,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
             BuildableName = "dot SAGA.app"
             BlueprintName = "dot SAGA"
-            ReferencedContainer = "container:Meshtastic.xcodeproj">
+            ReferencedContainer = "container:dot SAGA.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

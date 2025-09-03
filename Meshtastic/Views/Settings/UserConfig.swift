@@ -101,13 +101,13 @@ struct UserConfig: View {
 							.foregroundColor(.gray)
 							.font(.callout)
 						let supportedVersion = accessoryManager.checkIsVersionSupported(forVersion: minimumVersion)
-						Toggle(isOn: $isUnmessagable) {
-							Label("Unmessagable", systemImage: "iphone.slash")
-							Text("Used to identify unmonitored or infrastructure nodes so that messaging is not avaliable to nodes that will never respond.")
-								.font(.caption2)
-						}
-						.toggleStyle(SwitchToggleStyle(tint: .accentColor))
-						.disabled(!supportedVersion)
+//						Toggle(isOn: $isUnmessagable) {
+//							Label("Unmessagable", systemImage: "iphone.slash")
+//							Text("Used to identify unmonitored or infrastructure nodes so that messaging is not avaliable to nodes that will never respond.")
+//								.font(.caption2)
+//						}
+//						.toggleStyle(SwitchToggleStyle(tint: .accentColor))
+//						.disabled(!supportedVersion)
 					}
 					// Only manage ham mode for the locally connected node
 					if node?.num ?? 0 > 0 && node?.num ?? 0 == accessoryManager.activeDeviceNum ?? 0 {

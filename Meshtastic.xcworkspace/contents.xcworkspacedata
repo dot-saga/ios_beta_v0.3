@@ -5,7 +5,7 @@
       location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:Meshtastic.xcodeproj">
+      location = "group:dot SAGA.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MeshtasticProtobufs">

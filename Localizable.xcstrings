@@ -167,6 +167,9 @@
       },
       "shouldTranslate" : false
     },
+    "\"License\" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.\n\n\"Licensor\" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.\n\n\"Legal Entity\" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, \"control\" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.\n\n\"You\" (or \"Your\") shall mean an individual or Legal Entity exercising permissions granted by this License.\n\n\"Source\" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.\n\n\"Object\" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.\n\n\"Work\" shall mean the work of authorship, whether in Source or Object form, made available under the License." : {
+
+    },
     "(Re)define PIN_GPS_EN for your board." : {
       "localizations" : {
         "it" : {
@@ -480,6 +483,7 @@
       "shouldTranslate" : false
     },
     "%@ %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1054,6 +1058,7 @@
       }
     },
     "%d%%" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -1088,6 +1093,7 @@
       }
     },
     "%lf" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -1363,6 +1369,9 @@
         }
       }
     },
+    "•" : {
+
+    },
     "• %@" : {
       "shouldTranslate" : false
     },
@@ -1429,6 +1438,7 @@
       }
     },
     "0" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -1518,7 +1528,11 @@
         }
       }
     },
+    "1. Definitions." : {
+
+    },
     "2.4 Ghz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -1581,6 +1595,7 @@
       }
     },
     "8" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -2022,6 +2037,7 @@
       }
     },
     "About Meshtastic" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -2140,6 +2156,7 @@
       }
     },
     "Acknowledged" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -2230,6 +2247,9 @@
           }
         }
       }
+    },
+    "Acknowledgment" : {
+
     },
     "Actions" : {
       "localizations" : {
@@ -2970,6 +2990,7 @@
       }
     },
     "Afternoon" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -3502,6 +3523,7 @@
       }
     },
     "Always On" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -3716,6 +3738,7 @@
       }
     },
     "Ambient Lighting module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -3774,6 +3797,7 @@
       }
     },
     "An open source, off-grid, decentralized, mesh network that runs on affordable, low-power radios." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -3847,7 +3871,14 @@
         }
       }
     },
+    "Apache License\nVersion 2.0, January 2004" : {
+
+    },
+    "Apache License, Version 2.0" : {
+
+    },
     "App connected or stand alone messaging device." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -4017,6 +4048,7 @@
       }
     },
     "Apple Apps" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -4222,7 +4254,11 @@
         }
       }
     },
+    "Attribution" : {
+
+    },
     "Australia / New Zealand" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -4386,6 +4422,7 @@
       }
     },
     "Back" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -4482,6 +4519,7 @@
       }
     },
     "Bad" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -4510,6 +4548,7 @@
       }
     },
     "Bad Request" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -4608,6 +4647,7 @@
       }
     },
     "Bar" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -4997,6 +5037,7 @@
       }
     },
     "Biking" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5135,6 +5176,7 @@
       }
     },
     "Bluetooth" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5263,6 +5305,7 @@
       }
     },
     "Bluetooth config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5371,6 +5414,7 @@
       }
     },
     "Broadcasts GPS position packets as priority." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5435,6 +5479,7 @@
       }
     },
     "Broadcasts location as message to default channel regularly for to assist with device recovery." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5499,6 +5544,7 @@
       }
     },
     "Broadcasts telemetry packets as priority." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5597,6 +5643,7 @@
       }
     },
     "Buy Complete Radios" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -5686,7 +5733,17 @@
         }
       }
     },
+    "By placing an order, you warrant that you have the legal right to do so. You may be asked to provide payment information, and you represent that all provided information is accurate." : {
+
+    },
+    "By posting content on the Service, you grant Dot SAGA LTD the right to use, modify, publicly display, reproduce, and distribute it. You retain ownership of your content but must ensure it does not violate any laws or third-party rights." : {
+
+    },
+    "By sending us an email: " : {
+
+    },
     "Bytes" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -5900,6 +5957,7 @@
       }
     },
     "Canned Message module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -6086,6 +6144,7 @@
       }
     },
     "Canned Messages Messages Received For: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -6412,6 +6471,9 @@
           }
         }
       }
+    },
+    "Changes to These Terms" : {
+
     },
     "Channel" : {
       "localizations" : {
@@ -7154,6 +7216,7 @@
       }
     },
     "Channels being added from the QR code did not save. When adding channels the names must be unique." : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -7266,6 +7329,7 @@
       }
     },
     "China" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -7436,6 +7500,7 @@
       }
     },
     "Client" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -7470,6 +7535,7 @@
       }
     },
     "Client Hidden" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -7578,6 +7644,7 @@
       }
     },
     "Client Mute" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -7680,6 +7747,7 @@
       }
     },
     "Close" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -7776,6 +7844,9 @@
           }
         }
       }
+    },
+    "Collecting and Using Your Personal Data" : {
+
     },
     "Color" : {
       "localizations" : {
@@ -7976,6 +8047,7 @@
       }
     },
     "Configure" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -8055,6 +8127,7 @@
 
     },
     "Connect to a Node" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -8139,6 +8212,7 @@
       }
     },
     "Connected" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -8203,6 +8277,7 @@
       }
     },
     "Connected Node %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -8443,7 +8518,14 @@
         }
       }
     },
+    "Contact Us" : {
+
+    },
+    "Contact@dotsaga.live" : {
+
+    },
     "Contacts (%@)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -8506,6 +8588,12 @@
           }
         }
       }
+    },
+    "Content" : {
+
+    },
+    "Content Restrictions" : {
+
     },
     "Control Type" : {
       "localizations" : {
@@ -8780,6 +8868,9 @@
           }
         }
       }
+    },
+    "Copyright Policy" : {
+
     },
     "Could not find node" : {
       "localizations" : {
@@ -9319,6 +9410,7 @@
       }
     },
     "Default 128x64 screen layout" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -9351,6 +9443,9 @@
           }
         }
       }
+    },
+    "Definitions" : {
+
     },
     "Delete" : {
       "localizations" : {
@@ -10067,6 +10162,7 @@
       }
     },
     "Detection Sensor module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -10159,6 +10255,7 @@
       }
     },
     "Device" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -10287,6 +10384,7 @@
       }
     },
     "Device config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -10471,6 +10569,7 @@
       }
     },
     "Device Metadata received from: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -10711,6 +10810,7 @@
       }
     },
     "Device that does not forward packets from other devices." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -10775,6 +10875,7 @@
       }
     },
     "Device that only broadcasts as needed for stealth or power savings." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -11152,6 +11253,9 @@
         }
       }
     },
+    "Disclaimer" : {
+
+    },
     "Disconnect" : {
       "localizations" : {
         "de" : {
@@ -11313,6 +11417,7 @@
       }
     },
     "Display" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -11435,6 +11540,7 @@
       }
     },
     "Display config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -11641,6 +11747,7 @@
       }
     },
     "Documentation" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -11696,6 +11803,12 @@
         }
       }
     },
+    "dot SAGA" : {
+
+    },
+    "dot SAGA revolutionizes safety, shifting it from collective to personal. \n \nWe ensure your loved ones are safe and help is always one click away." : {
+
+    },
     "Double Tap as Button" : {
       "localizations" : {
         "it" : {
@@ -11731,6 +11844,7 @@
       }
     },
     "Down" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -11931,6 +12045,7 @@
       }
     },
     "Driving" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -12079,6 +12194,7 @@
       }
     },
     "Eighteen Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -12396,6 +12512,7 @@
       }
     },
     "Enables automatic TAK PLI broadcasts and reduces routine broadcasts." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -12673,6 +12790,7 @@
       }
     },
     "Encrypted Send Failed" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -13137,6 +13255,7 @@
       }
     },
     "European Union 433MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -13165,6 +13284,7 @@
       }
     },
     "European Union 868MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -13193,6 +13313,7 @@
       }
     },
     "Evening" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -13255,6 +13376,7 @@
       }
     },
     "Exclamation" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -13575,6 +13697,7 @@
       }
     },
     "External Notification module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -13689,6 +13812,7 @@
       }
     },
     "Failed to encode message content" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -13773,6 +13897,7 @@
       }
     },
     "Fair" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -13987,6 +14112,7 @@
       }
     },
     "Fifteen Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -14420,6 +14546,7 @@
       }
     },
     "Five Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -14518,6 +14645,7 @@
       }
     },
     "Five Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -14730,6 +14858,7 @@
       }
     },
     "Follow" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -14794,6 +14923,7 @@
       }
     },
     "Follow with heading" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -14959,7 +15089,14 @@
         }
       }
     },
+    "For the purposes of these Terms and Conditions:" : {
+
+    },
+    "For the purposes of this Privacy Policy:" : {
+
+    },
     "Forty Eight Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -15024,6 +15161,7 @@
       }
     },
     "Forty Five Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -15088,6 +15226,7 @@
       }
     },
     "Four Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -15152,6 +15291,7 @@
       }
     },
     "Four Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -15501,6 +15641,7 @@
       }
     },
     "Get custom waterproof solar and detection sensor router nodes, aluminium desktop nodes and rugged handsets." : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -15674,6 +15815,7 @@
       }
     },
     "GitHub Repository" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -15690,6 +15832,7 @@
       }
     },
     "Good" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -15716,6 +15859,9 @@
           }
         }
       }
+    },
+    "Governing Law" : {
+
     },
     "GPIO" : {
       "localizations" : {
@@ -16062,6 +16208,7 @@
       }
     },
     "HaHa" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -16146,6 +16293,7 @@
       }
     },
     "Hazardous" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -16230,6 +16378,7 @@
       }
     },
     "Heard" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -16294,6 +16443,7 @@
       }
     },
     "Heart" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -16454,6 +16604,7 @@
       }
     },
     "Hiking" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -16618,6 +16769,7 @@
       }
     },
     "Hops Away:" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -17055,7 +17207,11 @@
         }
       }
     },
+    "http://www.apache.org/licenses/" : {
+
+    },
     "Hum" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -17118,6 +17274,7 @@
       }
     },
     "Hybrid" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -17176,6 +17333,7 @@
       }
     },
     "Hybrid Flyover" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -17561,6 +17719,12 @@
         }
       }
     },
+    "If you have any questions about these Terms and Conditions:" : {
+
+    },
+    "If you have questions about this Privacy Policy:" : {
+
+    },
     "Ignore MQTT" : {
       "localizations" : {
         "it" : {
@@ -17664,6 +17828,7 @@
       }
     },
     "Ignores observed messages from foreign meshes like Local Only, but takes it step further by also ignoring messages from nodes not already in the node's known list." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -17686,6 +17851,7 @@
       }
     },
     "Ignores observed messages from foreign meshes that are open or those which it cannot decrypt. Only rebroadcasts message on the nodes local primary / secondary channels." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -17816,6 +17982,7 @@
       }
     },
     "Incomplete" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -17856,6 +18023,7 @@
       }
     },
     "India" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -17946,6 +18114,7 @@
       }
     },
     "Infrastructure node on a tower or mountain top only.  Not to be used for roofs or mobile nodes.  Needs exceptional coverage. Visible in Nodes list." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -18010,6 +18179,7 @@
       }
     },
     "Infrastructure node on a tower or mountain top only.  Not to be used for roofs or mobile nodes. Relays messages with minimal overhead. Not visible in Nodes list." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -18074,6 +18244,7 @@
       }
     },
     "Infrastructure node that always rebroadcasts packets once but only after all other modes, ensuring additional coverage for local clusters. Visible in Nodes list." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -18141,7 +18312,17 @@
         }
       }
     },
+    "Intellectual Property" : {
+
+    },
+    "Interpretation" : {
+
+    },
+    "Interpretation and Definitions" : {
+
+    },
     "Inverted top bar for 2 Color display" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -18176,6 +18357,7 @@
       }
     },
     "Japan" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -18412,6 +18594,7 @@
       }
     },
     "Korea" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -18620,6 +18803,7 @@
       }
     },
     "Left" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -18682,6 +18866,9 @@
           }
         }
       }
+    },
+    "Legal Documents" : {
+
     },
     "Level" : {
       "localizations" : {
@@ -18746,6 +18933,12 @@
           }
         }
       }
+    },
+    "License" : {
+
+    },
+    "License & Attribution" : {
+
     },
     "Licensed Operator" : {
       "localizations" : {
@@ -18815,6 +19008,9 @@
         }
       }
     },
+    "Limitation of Liability" : {
+
+    },
     "Line Series" : {
       "localizations" : {
         "it" : {
@@ -18842,6 +19038,9 @@
           }
         }
       }
+    },
+    "Links to Other Websites" : {
+
     },
     "Loading Logs. . ." : {
       "localizations" : {
@@ -19094,6 +19293,7 @@
       }
     },
     "Logs:" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -19202,6 +19402,7 @@
       }
     },
     "Long Range - Fast" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -19230,6 +19431,7 @@
       }
     },
     "Long Range - Moderate" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -19258,6 +19460,7 @@
       }
     },
     "Long Range - Slow" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -19496,6 +19699,7 @@
       }
     },
     "LoRa config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -19560,6 +19764,7 @@
       }
     },
     "Lost and Found" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -19628,6 +19833,7 @@
       }
     },
     "M5 Stack Card KB / RAK Keypad" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -19674,6 +19880,7 @@
       }
     },
     "Malaysia 433MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -19702,6 +19909,7 @@
       }
     },
     "Malaysia 919MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -19869,6 +20077,7 @@
 
     },
     "Manual Configuration" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -19933,6 +20142,9 @@
       }
     },
     "Manual connection string" : {
+
+    },
+    "Map" : {
 
     },
     "Map Data" : {
@@ -20111,6 +20323,7 @@
       }
     },
     "Max Retransmission Reached" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -20175,6 +20388,7 @@
       }
     },
     "Medium Range - Fast" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -20203,6 +20417,7 @@
       }
     },
     "Medium Range - Slow" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -20323,6 +20538,7 @@
       }
     },
     "Mesh Map" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -20386,9 +20602,6 @@
         }
       }
     },
-    "Meshtastic" : {
-
-    },
     "Meshtastic Node %@ has shared channels with you" : {
       "localizations" : {
         "de" : {
@@ -20424,6 +20637,7 @@
       }
     },
     "Meshtastic® Copyright Meshtastic LLC" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -20584,6 +20798,7 @@
       }
     },
     "Message received from the text message app." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -20801,6 +21016,7 @@
       }
     },
     "Metric" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -20829,6 +21045,7 @@
       }
     },
     "Midday" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -21085,6 +21302,7 @@
       }
     },
     "Moderate" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -21183,6 +21401,7 @@
       }
     },
     "Morning" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -21443,6 +21662,7 @@
       }
     },
     "MQTT module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -21587,6 +21807,7 @@
       }
     },
     "MyInfo received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -21815,6 +22036,7 @@
       }
     },
     "Network" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -21943,6 +22165,7 @@
       }
     },
     "Network config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22109,6 +22332,7 @@
       }
     },
     "New Node" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -22137,6 +22361,7 @@
       }
     },
     "New Node has been discovered" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -22165,6 +22390,7 @@
       }
     },
     "New Zealand 865MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -22233,6 +22459,7 @@
       }
     },
     "Nighttime" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22267,6 +22494,7 @@
       }
     },
     "NMEA Positions" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22331,6 +22559,7 @@
       }
     },
     "No Channel" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22593,6 +22822,7 @@
 
     },
     "No Interface" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22694,6 +22924,7 @@
       }
     },
     "No PIN (Just Works)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22820,6 +23051,7 @@
       }
     },
     "No Response" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -22884,6 +23116,7 @@
       }
     },
     "No Route" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -23022,6 +23255,7 @@
       }
     },
     "Node does not have positions" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -23309,6 +23543,7 @@
       }
     },
     "Nodes (%@)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -23373,6 +23608,7 @@
       }
     },
     "None" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -23465,6 +23701,7 @@
       }
     },
     "Not Authorized" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -23529,6 +23766,7 @@
       }
     },
     "Not Present" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -23717,6 +23955,7 @@
       }
     },
     "Off" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -23892,6 +24131,7 @@
       }
     },
     "On Boot Only" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -24118,6 +24358,7 @@
       }
     },
     "One Second" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -24216,6 +24457,7 @@
       }
     },
     "Only permitted for SENSOR, TRACKER and TAK_TRACKER roles, this will inhibit all rebroadcasts, not unlike CLIENT_MUTE role." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -24238,6 +24480,7 @@
       }
     },
     "Only rebroadcasts packets from the core portnums: NodeInfo, Text, Position, Telemetry, and Routing." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -24300,6 +24543,7 @@
       }
     },
     "Optimized for 2 color displays" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -24328,6 +24572,7 @@
       }
     },
     "Optimized for ATAK system communication, reduces routine broadcasts." : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -24641,6 +24886,18 @@
         }
       }
     },
+    "Our liability is limited to the amount you paid for the Service or $100 if no payment was made. We are not liable for indirect or consequential damages." : {
+
+    },
+    "Our Privacy Policy was last updated on February 5th, 2025." : {
+
+    },
+    "Our Service may link to third-party websites. We are not responsible for their content or privacy practices. Please review their terms before using." : {
+
+    },
+    "Our Terms and Conditions were last updated on February 5th, 2025." : {
+
+    },
     "Output live debug logging over serial, view and export position-redacted device logs over Bluetooth." : {
       "localizations" : {
         "de" : {
@@ -24760,6 +25017,7 @@
       }
     },
     "Overlanding" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -25118,6 +25376,7 @@
       }
     },
     "PAX Counter config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -25186,6 +25445,7 @@
       }
     },
     "PAX Counter message received from: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -25300,6 +25560,7 @@
       }
     },
     "Philippines 433MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -25328,6 +25589,7 @@
       }
     },
     "Philippines 868MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -25356,6 +25618,7 @@
       }
     },
     "Philippines 915MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -25574,6 +25837,9 @@
         }
       }
     },
+    "Placing Orders for Products" : {
+
+    },
     "Please be advised that because the map report is not encrypted, your data may be stored and displayed permanently by third parties. Meshtastic does not assume responsibility for any such storage, display or disclosure of this data." : {
       "localizations" : {
         "ja" : {
@@ -25630,7 +25896,11 @@
         }
       }
     },
+    "Please read these Terms and Conditions carefully before using Dot SAGA LTD's app and website." : {
+
+    },
     "Please set a region" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -25687,6 +25957,7 @@
       }
     },
     "Poop" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -25861,6 +26132,7 @@
       }
     },
     "Position config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -26370,6 +26642,7 @@
       }
     },
     "Power config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -26759,6 +27032,12 @@
         }
       }
     },
+    "Prices and Payments" : {
+
+    },
+    "Prices are subject to change without notice. Payments can be made using various methods, including Visa, MasterCard, or online options like PayPal." : {
+
+    },
     "Primary" : {
       "localizations" : {
         "de" : {
@@ -26891,6 +27170,9 @@
         }
       }
     },
+    "Privacy Policy" : {
+
+    },
     "Private Key" : {
       "localizations" : {
         "de" : {
@@ -26932,6 +27214,7 @@
       }
     },
     "Process" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -27063,7 +27346,14 @@
         }
       }
     },
+    "Promotions" : {
+
+    },
+    "Promotions offered through the Service may have separate rules. If they conflict with these Terms, the promotion rules will apply." : {
+
+    },
     "Protobufs" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -27284,6 +27574,7 @@
       }
     },
     "Question" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -27440,6 +27731,7 @@
       }
     },
     "RAK Rotary Encoder" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -27632,6 +27924,7 @@
       }
     },
     "Range Test module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -27824,6 +28117,7 @@
       }
     },
     "Rebroadcast any observed message, if it was on our private channel or from another mesh with the same lora params." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -27908,6 +28202,7 @@
       }
     },
     "Received a negative acknowledgment" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -28218,6 +28513,7 @@
       }
     },
     "Regional Duty Cycle Limit Reached" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -28338,6 +28634,7 @@
       }
     },
     "Remote Legacy Admin: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -28366,6 +28663,7 @@
       }
     },
     "Remote PKI Admin: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -28496,6 +28794,7 @@
       }
     },
     "Repeater" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -28628,6 +28927,7 @@
       }
     },
     "Request Legacy Admin: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -28656,6 +28956,7 @@
       }
     },
     "Request PKI Admin: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -28684,6 +28985,7 @@
       }
     },
     "Requested Canned Messages Module Messages for node: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -28994,9 +29296,6 @@
     "Retreiving nodes . ." : {
 
     },
-    "Retreiving nodes %lld" : {
-
-    },
     "Retrieving nodes" : {
 
     },
@@ -29007,6 +29306,7 @@
 
     },
     "Review the app" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29047,6 +29347,7 @@
       }
     },
     "Right" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29359,6 +29660,7 @@
       }
     },
     "Role: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29545,6 +29847,7 @@
       }
     },
     "Route Recorder" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -29635,6 +29938,7 @@
       }
     },
     "Router" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29675,6 +29979,7 @@
       }
     },
     "Router Late" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29709,6 +30014,7 @@
       }
     },
     "Routes" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -29737,6 +30043,7 @@
       }
     },
     "Routing received for RequestID: %@ Ack Status: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29857,6 +30164,7 @@
       }
     },
     "RSSI %llddB" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -29885,6 +30193,7 @@
       }
     },
     "RTTTL Ringtone config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -29949,6 +30258,7 @@
       }
     },
     "Russia" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -29999,6 +30309,7 @@
       }
     },
     "Same as behavior as ALL but skips packet decoding and simply rebroadcasts them. Only available in Repeater role. Setting this on any other roles will result in ALL behavior." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -30021,6 +30332,7 @@
       }
     },
     "Satellite" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -30073,6 +30385,7 @@
       }
     },
     "Satellite Flyover" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -30325,6 +30638,7 @@
       }
     },
     "Save Config for %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -30799,6 +31113,7 @@
       }
     },
     "Select" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -31166,6 +31481,7 @@
       }
     },
     "Send ${messageContent} to ${nodeNumber}" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -31595,6 +31911,7 @@
       }
     },
     "Sensor" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -31691,6 +32008,7 @@
       }
     },
     "Sent a Channel for: %@ Channel Index %d" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -31749,6 +32067,7 @@
       }
     },
     "Sent a LoRa.Config for: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -31878,6 +32197,7 @@
       }
     },
     "Sent a Trace Route Request to node: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -31942,6 +32262,7 @@
       }
     },
     "Sent a Waypoint Packet from: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -32006,6 +32327,7 @@
       }
     },
     "Sent message %@ from %@ to %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -32328,6 +32650,7 @@
       }
     },
     "Serial module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -32760,6 +33083,7 @@
       }
     },
     "Seventy Two Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -32844,9 +33168,6 @@
           }
         }
       }
-    },
-    "Share Location" : {
-
     },
     "Share QR Code" : {
       "localizations" : {
@@ -33085,6 +33406,7 @@
       }
     },
     "Short Range - Fast" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -33113,6 +33435,7 @@
       }
     },
     "Short Range - Slow" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -33141,6 +33464,7 @@
       }
     },
     "Short Range - Turbo" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -33574,6 +33898,7 @@
       }
     },
     "Simple" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -33638,6 +33963,7 @@
       }
     },
     "Singapore 923MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -33666,6 +33992,7 @@
       }
     },
     "Six Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -33730,6 +34057,7 @@
       }
     },
     "Skiing" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -34068,6 +34396,7 @@
       }
     },
     "Sponsor App Development" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -34176,6 +34505,7 @@
       }
     },
     "Standard" : {
+      "extractionState" : "stale",
       "localizations" : {
         "he" : {
           "stringUnit" : {
@@ -34222,6 +34552,7 @@
       }
     },
     "Standard Muted" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -34440,6 +34771,7 @@
       }
     },
     "Store & Forward module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -34560,6 +34892,7 @@
       }
     },
     "Subsystem" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -34684,6 +35017,7 @@
       }
     },
     "Taiwan" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -34706,6 +35040,7 @@
       }
     },
     "TAK" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -34746,6 +35081,7 @@
       }
     },
     "TAK Tracker" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -34899,9 +35235,6 @@
         }
       }
     },
-    "TCP" : {
-      "shouldTranslate" : false
-    },
     "Telemetry" : {
       "localizations" : {
         "de" : {
@@ -35031,6 +35364,7 @@
       }
     },
     "Telemetry module config received: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -35095,6 +35429,7 @@
       }
     },
     "Temp" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -35227,6 +35562,7 @@
       }
     },
     "Ten Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -35290,6 +35626,18 @@
         }
       }
     },
+    "Termination" : {
+
+    },
+    "Terms and Conditions" : {
+
+    },
+    "TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION" : {
+
+    },
+    "Terms of Service" : {
+
+    },
     "Tertiary Admin Key" : {
       "localizations" : {
         "de" : {
@@ -35331,6 +35679,7 @@
       }
     },
     "Text Message" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -35395,6 +35744,7 @@
       }
     },
     "TFT Full Color Displays" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -35423,6 +35773,7 @@
       }
     },
     "Thailand" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -35477,6 +35828,9 @@
           }
         }
       }
+    },
+    "The Company reserves the right to remove content that violates these Terms." : {
+
     },
     "The compass heading on the screen outside of the circle will always point north." : {
       "localizations" : {
@@ -35734,6 +36088,7 @@
       }
     },
     "The packet is too large" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -35983,6 +36338,12 @@
         }
       }
     },
+    "The Service and its content, excluding content provided by users, are the property of Dot SAGA LTD and its licensors. You may not use our trademarks without prior written consent." : {
+
+    },
+    "The Service is provided \"AS IS\" without warranties of any kind. We do not guarantee the Service will be uninterrupted, error-free, or secure." : {
+
+    },
     "The state of the LED (on/off)" : {
       "localizations" : {
         "it" : {
@@ -36142,6 +36503,12 @@
         }
       }
     },
+    "These Terms and Conditions govern the use of the Service and set out the rights and obligations of all users. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access the Service." : {
+
+    },
+    "These Terms are governed by the laws of Israel. Any disputes will be resolved under Israeli law." : {
+
+    },
     "Thirty Minutes" : {
       "localizations" : {
         "de" : {
@@ -36207,6 +36574,7 @@
       }
     },
     "Thirty Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -36271,6 +36639,7 @@
       }
     },
     "Thirty Six Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -36486,6 +36855,12 @@
         }
       }
     },
+    "This Privacy Policy describes our policies and procedures on the collection, use, and disclosure of your information when you use Dot SAGA LTD's app and website and informs you about your privacy rights and how the law protects you." : {
+
+    },
+    "This service would not be possible without the incredible work of the Meshtastic open-source community. Thank you, Meshtastic." : {
+
+    },
     "This will disable fixed position and remove the currently set position." : {
       "localizations" : {
         "it" : {
@@ -36549,6 +36924,7 @@
       }
     },
     "Three Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -36613,6 +36989,7 @@
       }
     },
     "Three Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -36677,6 +37054,7 @@
       }
     },
     "Thumbs Down" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -36741,6 +37119,7 @@
       }
     },
     "Thumbs Up" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -37131,6 +37510,7 @@
 
     },
     "Topic: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -37305,6 +37685,7 @@
       }
     },
     "Trace Route request returned: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -37481,6 +37862,7 @@
       }
     },
     "Tracker" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -37729,6 +38111,7 @@
       }
     },
     "Twelve Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -37793,6 +38176,7 @@
       }
     },
     "Twenty Four Hours" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -37921,6 +38305,7 @@
       }
     },
     "Two Minutes" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -37985,6 +38370,7 @@
       }
     },
     "Two Seconds" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -38048,6 +38434,9 @@
         }
       }
     },
+    "Types of Data Collected" : {
+
+    },
     "UDP Broadcast" : {
       "localizations" : {
         "it" : {
@@ -38077,6 +38466,7 @@
       }
     },
     "Ukraine 433MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -38105,6 +38495,7 @@
       }
     },
     "Ukraine 868MHz" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -38161,6 +38552,7 @@
       }
     },
     "Unhealthy" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -38189,6 +38581,7 @@
       }
     },
     "Unhealthy for Sensitive Groups" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -38217,6 +38610,7 @@
       }
     },
     "United States" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -38273,6 +38667,7 @@
       }
     },
     "unknown" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -38423,6 +38818,7 @@
       }
     },
     "Unmessagable" : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -38547,6 +38943,7 @@
       }
     },
     "Up" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -38645,6 +39042,7 @@
       }
     },
     "up to %@ away" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -39293,6 +39691,7 @@
       }
     },
     "Used to identify unmonitored or infrastructure nodes so that messaging is not avaliable to nodes that will never respond." : {
+      "extractionState" : "stale",
       "localizations" : {
         "ja" : {
           "stringUnit" : {
@@ -39371,6 +39770,9 @@
           }
         }
       }
+    },
+    "User Accounts" : {
+
     },
     "User Config" : {
       "localizations" : {
@@ -39747,6 +40149,7 @@
       }
     },
     "Version: %@ (%@)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -39775,6 +40178,7 @@
       }
     },
     "Version: %1$@ (%2$@)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -39815,6 +40219,7 @@
       }
     },
     "Very Unhealthy" : {
+      "extractionState" : "stale",
       "localizations" : {
         "it" : {
           "stringUnit" : {
@@ -40129,6 +40534,7 @@
       }
     },
     "Walking" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -40169,6 +40575,7 @@
       }
     },
     "Wave" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -40259,6 +40666,7 @@
       }
     },
     "Waypoint Packet received from node: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -40321,6 +40729,21 @@
           }
         }
       }
+    },
+    "We may suspend or terminate your account for violating these Terms. Upon termination, your right to use the Service ceases immediately." : {
+
+    },
+    "We reserve the right to cancel orders due to errors or suspected fraud." : {
+
+    },
+    "We reserve the right to modify these Terms. We will notify you of any material changes at least 30 days before they take effect. Continued use of the Service means you accept the new Terms." : {
+
+    },
+    "We respect intellectual property rights. If you believe your copyrighted work has been infringed, contact us at Contact@dotsaga.live with detailed information about the infringement." : {
+
+    },
+    "We use your personal data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy." : {
+
     },
     "Weather Conditions" : {
       "localizations" : {
@@ -40495,7 +40918,11 @@
         }
       }
     },
+    "What is dot SAGA?" : {
+
+    },
     "What is Meshtastic?" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -40568,6 +40995,9 @@
           }
         }
       }
+    },
+    "When creating an account, you must provide accurate, complete, and current information. You are responsible for safeguarding your password and any activities under your account." : {
+
     },
     "When enabled the PAX Counter module counts the number of people passing by using WiFi and Bluetooth. Both WiFI and Bluetooth must be disabled for PAX counter to work." : {
       "localizations" : {
@@ -40894,6 +41324,7 @@
       }
     },
     "Within %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
@@ -40932,6 +41363,9 @@
           }
         }
       }
+    },
+    "Words with capitalized initial letters have meanings defined under the following conditions. These definitions apply whether the terms appear in singular or plural." : {
+
     },
     "x" : {
       "localizations" : {
@@ -41250,6 +41684,15 @@
         }
       }
     },
+    "You may not post content that is:" : {
+
+    },
+    "You may not use a username that belongs to someone else without proper authorization or any name that is offensive, vulgar, or obscene." : {
+
+    },
+    "You represent that you are over 18 years old. Dot SAGA LTD does not permit those under 18 to use the Service." : {
+
+    },
     "Your current location will be set as the fixed position and broadcast over the mesh on the position interval." : {
       "localizations" : {
         "it" : {
@@ -41498,6 +41941,9 @@
         }
       }
     },
+    "Your Right to Post Content" : {
+
+    },
     "Your route file must have both Latitude and Longitude columns and headers." : {
       "localizations" : {
         "it" : {
@@ -41525,6 +41971,9 @@
           }
         }
       }
+    },
+    "Your use of the Service is also conditioned on your acceptance of our Privacy Policy. Please read it carefully before using our Service." : {
+
     }
   },
   "version" : "1.1"

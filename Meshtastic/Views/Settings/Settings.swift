@@ -113,54 +113,6 @@ struct Settings: View {
 					Image(systemName: "person.crop.rectangle.fill")
 				}
 			}
-
-			NavigationLink(value: SettingsNavigationState.bluetooth) {
-				Label {
-					Text("Bluetooth")
-				} icon: {
-					Image(systemName: "antenna.radiowaves.left.and.right")
-				}
-			}
-
-			NavigationLink(value: SettingsNavigationState.device) {
-				Label {
-					Text("Device")
-				} icon: {
-					Image(systemName: "flipphone")
-				}
-			}
-
-			NavigationLink(value: SettingsNavigationState.display) {
-				Label {
-					Text("Display")
-				} icon: {
-					Image(systemName: "display")
-				}
-			}
-
-			NavigationLink(value: SettingsNavigationState.network) {
-				Label {
-					Text("Network")
-				} icon: {
-					Image(systemName: "network")
-				}
-			}
-
-			NavigationLink(value: SettingsNavigationState.position) {
-				Label {
-					Text("Position")
-				} icon: {
-					Image(systemName: "location")
-				}
-			}
-
-			NavigationLink(value: SettingsNavigationState.power) {
-				Label {
-					Text("Power")
-				} icon: {
-					Image(systemName: "bolt.fill")
-				}
-			}
 		}
 	}
 
@@ -331,6 +283,34 @@ struct Settings: View {
 		}
 	}
 
+	var legalDocumentsSection: some View {
+		Section("Legal Documents") {
+			NavigationLink(value: SettingsNavigationState.termsOfService) {
+				Label {
+					Text("Terms of Service")
+				} icon: {
+					Image(systemName: "doc.text")
+				}
+			}
+			
+			NavigationLink(value: SettingsNavigationState.privacyPolicy) {
+				Label {
+					Text("Privacy Policy")
+				} icon: {
+					Image(systemName: "hand.raised")
+				}
+			}
+			
+			NavigationLink(value: SettingsNavigationState.licenseAttribution) {
+				Label {
+					Text("License & Attribution")
+				} icon: {
+					Image(systemName: "doc.text.fill")
+				}
+			}
+		}
+	}
+
 	var body: some View {
 		NavigationStack(
 			path: Binding<[SettingsNavigationState]>(
@@ -346,121 +326,14 @@ struct Settings: View {
 			List {
 				NavigationLink(value: SettingsNavigationState.about) {
 					Label {
-						Text("About Meshtastic")
+						Text("dot SAGA")
 					} icon: {
 						Image(systemName: "questionmark.app")
 					}
 				}
 
-				NavigationLink(value: SettingsNavigationState.appSettings) {
-					Label {
-						Text("App Settings")
-					} icon: {
-						Image(systemName: "gearshape")
-					}
-				}
-				NavigationLink(value: SettingsNavigationState.routes) {
-					Label {
-						Text("Routes")
-					} icon: {
-						Image(systemName: "road.lanes.curved.right")
-					}
-				}
-
-				NavigationLink(value: SettingsNavigationState.routeRecorder) {
-					Label {
-						Text("Route Recorder")
-					} icon: {
-						Image(systemName: "record.circle")
-							.foregroundColor(.red)
-					}
-				}
-
-				if !(node?.deviceConfig?.isManaged ?? false) {
-					if accessoryManager.isConnected {
-						Section("Configure") {
-							if node?.canRemoteAdmin ?? false {
-								Picker("Node", selection: $selectedNode) {
-									if selectedNode == 0 {
-										Text("Connect to a Node").tag(0)
-									}
-									ForEach(nodes) { node in
-										/// Connected Node
-										if node.num == accessoryManager.activeDeviceNum ?? 0 {
-											Label {
-												Text("Connected") + Text(verbatim: ": \(node.user?.longName?.addingVariationSelectors ?? "Unknown".localized)")
-											} icon: {
-												accessoryManager.activeConnection?.device.transportType.icon ?? Image("questionmark.circle")
-											}
-											.tag(Int(node.num))
-										} else if node.canRemoteAdmin && UserDefaults.enableAdministration && node.sessionPasskey != nil { /// Nodes using the new PKI system
-											Label {
-												Text("Remote PKI Admin: \(node.user?.longName ?? "Unknown".localized)")
-											} icon: {
-												Image(systemName: "av.remote")
-											}
-											.font(.caption2)
-											.tag(Int(node.num))
-										} else if  !UserDefaults.enableAdministration && node.metadata != nil { /// Nodes using the old admin system
-											Label {
-												Text("Remote Legacy Admin: \(node.user?.longName ?? "Unknown".localized)")
-											} icon: {
-												Image(systemName: "av.remote")
-											}
-											.tag(Int(node.num))
-										} else if UserDefaults.enableAdministration && node.user?.pkiEncrypted ?? false {
-											Label {
-												Text("Request PKI Admin: \(node.user?.longName?.addingVariationSelectors ?? "Unknown".localized)")
-											} icon: {
-												Image(systemName: "rectangle.and.hand.point.up.left")
-											}
-											.tag(Int(node.num))
-										} else if !UserDefaults.enableAdministration {
-											Label {
-												Text("Request Legacy Admin: \(node.user?.longName?.addingVariationSelectors ?? "Unknown".localized)")
-											} icon: {
-												Image(systemName: "rectangle.and.hand.point.up.left")
-											}
-											.tag(Int(node.num))
-										}
-									}
-								}
-								.pickerStyle(.navigationLink)
-								.onChange(of: selectedNode) { _, newValue in
-									if selectedNode > 0,
-									   let destinationNode = nodes.first(where: { $0.num == newValue }),
-									   let connectedNode = nodes.first(where: { $0.num == preferredNodeNum }),
-									   let fromUser = connectedNode.user,
-									   let _ = connectedNode.myInfo,  // not sure why, but this check was present in the initial code.
-									   let toUser = destinationNode.user {
-
-										preferredNodeNum = Int(connectedNode.num)
-										Task {
-											_ = try await accessoryManager.requestDeviceMetadata(fromUser: fromUser, toUser: toUser)
-											Task { @MainActor in
-												Logger.mesh.info("Sent node metadata request from node details")
-											}
-										}
-									}
-								}
-								TipView(AdminChannelTip(), arrowEdge: .top)
-									.tipViewStyle(PersistentTip())
-							} else {
-								if accessoryManager.isConnected {
-									Text("Connected Node \(node?.user?.longName?.addingVariationSelectors ?? "Unknown".localized)")
-								}
-							}
-						}
-					}
-					radioConfigurationSection
-					deviceConfigurationSection
-					moduleConfigurationSection
-					loggingSection
-#if DEBUG
-					developersSection
-#endif
-					firmwareSection
-				}
+				deviceConfigurationSection
+				legalDocumentsSection
 			}
 			.navigationDestination(for: SettingsNavigationState.self) { destination in
 				let node = nodes.first(where: { $0.num == preferredNodeNum })
@@ -523,6 +396,12 @@ struct Settings: View {
 					AppData()
 				case .firmwareUpdates:
 					Firmware(node: node)
+				case .termsOfService:
+					TermsOfService()
+				case .privacyPolicy:
+					PrivacyPolicy()
+				case .licenseAttribution:
+					LicenseAttribution()
 				}
 			}
 			.onChange(of: UserDefaults.preferredPeripheralNum ) { _, newConnectedNode in
@@ -568,3 +447,23 @@ struct Settings: View {
 		}
 	}
 }
+
+// MARK: Helper Views
+
+struct BulletPoint: View {
+	let text: String
+	
+	init(_ text: String) {
+		self.text = text
+	}
+	
+	var body: some View {
+		HStack(alignment: .top) {
+			Text("•")
+				.padding(.trailing, 5)
+			Text(text)
+		}
+	}
+}
+
+

@@ -52,6 +52,9 @@ enum SettingsNavigationState: String {
 	case debugLogs
 	case appFiles
 	case firmwareUpdates
+	case termsOfService
+	case privacyPolicy
+	case licenseAttribution
 }
 
 struct NavigationState: Hashable {

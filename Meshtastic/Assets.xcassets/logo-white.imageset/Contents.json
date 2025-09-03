@@ -1,8 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "Mesh_Logo_White_Small.svg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
       "filename" : "Mesh_Logo_White.svg",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Mesh_Logo_White_Large.svg",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {

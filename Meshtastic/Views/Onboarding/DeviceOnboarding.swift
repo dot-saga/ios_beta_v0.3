@@ -25,7 +25,7 @@ struct DeviceOnboarding: View {
 				.font(.title2.bold())
 				.multilineTextAlignment(.center)
 				.fixedSize(horizontal: false, vertical: true)
-			Text("Meshtastic")
+			Text("dot SAGA")
 				.font(.largeTitle.bold())
 				.multilineTextAlignment(.center)
 				.fixedSize(horizontal: false, vertical: true)
@@ -35,7 +35,7 @@ struct DeviceOnboarding: View {
 	var welcomeView: some View {
 		VStack {
 			ScrollView(.vertical) {
-				VStack {
+				VStack(alignment: .center) {
 					// Title
 					title
 						.padding(.top)

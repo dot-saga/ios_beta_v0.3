@@ -47,7 +47,7 @@ struct ContentView: View {
 
 			MeshMap(router: appState.router)
 				.tabItem {
-					Label("Mesh Map", systemImage: "map")
+					Label("Map", systemImage: "map")
 				}
 				.tag(NavigationState.Tab.map)
 

@@ -483,7 +483,7 @@ struct NodeDetail: View {
 									do {
 										_ = try await accessoryManager.requestDeviceMetadata(
 											fromUser: connectedNode.user!,
-											toUser: node.user!,
+											toUser: node.user!
 										)
 										Logger.mesh.info("Sent node metadata request from node details")
 									} catch {
@@ -538,7 +538,8 @@ struct NodeDetail: View {
 									do {
 										try await accessoryManager.sendReboot(
 											fromUser: connectedNode.user!,
-											toUser: node.user! )
+											toUser: node.user!
+										)
 									} catch {
 										Logger.mesh.warning("Reboot Failed")
 									}

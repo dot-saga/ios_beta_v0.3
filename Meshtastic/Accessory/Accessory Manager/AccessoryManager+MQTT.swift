@@ -48,6 +48,7 @@ extension AccessoryManager {
 	}
 
 	// MARK: MqttClientProxyManagerDelegate Methods
+	@MainActor
 	func onMqttConnected() {
 		mqttProxyConnected = true
 		mqttError = ""
@@ -55,11 +56,13 @@ extension AccessoryManager {
 		mqttManager.mqttClientProxy?.subscribe(mqttManager.topic)
 	}
 
+	@MainActor
 	func onMqttDisconnected() {
 		mqttProxyConnected = false
 		Logger.services.info("📲 MQTT Disconnected")
 	}
 
+	@MainActor
 	func onMqttMessageReceived(message: CocoaMQTTMessage) {
 		if message.topic.contains("/stat/") {
 			return
@@ -77,6 +80,7 @@ extension AccessoryManager {
 		}
 	}
 
+	@MainActor
 	func onMqttError(message: String) {
 		mqttProxyConnected = false
 		mqttError = message

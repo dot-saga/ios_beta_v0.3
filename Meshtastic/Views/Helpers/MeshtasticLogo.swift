@@ -12,36 +12,30 @@ struct MeshtasticLogo: View {
 
 	var body: some View {
 		#if targetEnvironment(macCatalyst)
-			VStack {
-				if #available(iOS 26.0, macOS 26.0, *) {
-					Image(colorScheme == .dark ? "logo-white" : "logo-black")
-						.resizable()
-						.foregroundColor(.accentColor)
-						.scaledToFit()
-				} else {
-					Image("logo-white")
-						.resizable()
-						.foregroundColor(.accentColor)
-						.scaledToFit()
-				}
-					
+			if #available(iOS 26.0, macOS 26.0, *) {
+				Image(colorScheme == .dark ? "logo-white" : "logo-black")
+					.resizable()
+					.foregroundColor(.accentColor)
+					.scaledToFit()
+					.frame(maxWidth: .infinity, alignment: .leading)
+			} else {
+				Image("logo-white")
+					.resizable()
+					.foregroundColor(.accentColor)
+					.scaledToFit()
+					.frame(maxWidth: .infinity, alignment: .leading)
 			}
-			.padding(.bottom, 5)
-			.padding(.top, 5)
 		#else
 		if #available(iOS 26.0, macOS 26.0, *) {
-			VStack {
-				Image(colorScheme == .dark ? "logo-white" : "logo-black")
-					.resizable()
-					.scaledToFit()
-			}
+			Image(colorScheme == .dark ? "logo-white" : "logo-black")
+				.resizable()
+				.scaledToFit()
+				.frame(maxWidth: .infinity, alignment: .leading)
 		} else {
-			VStack {
-				Image(colorScheme == .dark ? "logo-white" : "logo-black")
-					.resizable()
-					.scaledToFit()
-			}
-			.padding(.bottom, 5)
+			Image(colorScheme == .dark ? "logo-white" : "logo-black")
+				.resizable()
+				.scaledToFit()
+				.frame(maxWidth: .infinity, alignment: .leading)
 		}
 		#endif
 	}
