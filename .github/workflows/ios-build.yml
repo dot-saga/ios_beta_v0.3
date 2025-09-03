@@ -32,17 +32,17 @@ jobs:
       - name: Resolve Swift Packages
         run: |
           xcodebuild -resolvePackageDependencies \
-            -workspace "Meshtastic.xcworkspace"
+            -project "dot SAGA.xcodeproj"
 
       - name: Build dot SAGA (iOS Simulator)
         run: |
           set -o pipefail
           xcodebuild \
-            -workspace "Meshtastic.xcworkspace" \
+            -project "dot SAGA.xcodeproj" \
             -scheme "dot SAGA" \
             -destination 'platform=iOS Simulator,name=iPhone 15' \
             -configuration Debug \
-            clean build | xcpretty -c || xcodebuild -workspace "Meshtastic.xcworkspace" -scheme "dot SAGA" -destination 'platform=iOS Simulator,name=iPhone 15' -configuration Debug clean build
+            clean build | xcpretty -c || xcodebuild -project "dot SAGA.xcodeproj" -scheme "dot SAGA" -destination 'platform=iOS Simulator,name=iPhone 15' -configuration Debug clean build
 
       - name: Archive dSYMs
         if: always()
