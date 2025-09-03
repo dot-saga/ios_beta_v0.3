@@ -39,4 +39,21 @@ jobs:
             -scheme "dot SAGA" \
             -destination 'generic/platform=iOS' \
             -configuration Release \
+
+      - name: Archive dSYMs
+        if: always()
+        run: |
+          mkdir -p build-artifacts
+          find "$HOME/Library/Developer/Xcode/DerivedData" -type d -name "*.dSYM" -print0 | \
+            xargs -0 -I {} cp -R "{}" build-artifacts/ || true
+          (cd build-artifacts && zip -r dSYMs.zip .) || true
+
+      - name: Upload dSYMs artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dSYMs-${{ github.sha }}
+          path: build-artifacts/dSYMs.zip
+          if-no-files-found: ignore
+          retention-days: 7
             clean build | xcpretty -c || xcodebuild -workspace "Meshtastic.xcworkspace" -scheme "dot SAGA" -destination 'generic/platform=iOS' -configuration Release clean build
