@@ -1,0 +1,112 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+env:
+  # Change if you want to force a specific scheme name at runtime.
+  SCHEME_OVERRIDE: ""
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Xcode version
+        run: xcodebuild -version
+
+      - name: Detect workspace/project & resolve shared scheme
+        id: detect
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s globstar nullglob
+
+          # 1) Locate workspace/project anywhere in the repo
+          WORKSPACES=(**/*.xcworkspace)
+          PROJECTS=(**/*.xcodeproj)
+
+          if [[ ${#WORKSPACES[@]} -gt 0 ]]; then
+            WS="${WORKSPACES[0]}"
+            echo "workspace=$WS" >> "$GITHUB_OUTPUT"
+            echo "Found workspace: $WS"
+            xcodebuild -list -workspace "$WS" || true
+          elif [[ ${#PROJECTS[@]} -gt 0 ]]; then
+            PRJ="${PROJECTS[0]}"
+            echo "project=$PRJ" >> "$GITHUB_OUTPUT"
+            echo "Found project: $PRJ"
+            xcodebuild -list -project "$PRJ" || true
+          else
+            echo "::error::No .xcworkspace or .xcodeproj found in the repository. Put the Xcode project at repo root or update the workflow to cd into the correct folder."
+            exit 64
+          fi
+
+          # 2) Resolve scheme
+          DEFAULT_SCHEME="Meshtastic"
+          SCHEME="${SCHEME_OVERRIDE:-$DEFAULT_SCHEME}"
+
+          # Does a shared .xcscheme exist for the desired scheme?
+          if ls **/xcshareddata/xcschemes/"$SCHEME".xcscheme >/dev/null 2>&1 ; then
+            echo "scheme=$SCHEME" >> "$GITHUB_OUTPUT"
+            echo "Using shared scheme: $SCHEME"
+          else
+            # Try to auto-pick the first shared scheme
+            FOUND=$(ls **/xcshareddata/xcschemes/*.xcscheme 2>/dev/null | head -n1 || true)
+            if [[ -n "$FOUND" ]]; then
+              AUTO_SCHEME="$(basename "$FOUND" .xcscheme)"
+              echo "scheme=$AUTO_SCHEME" >> "$GITHUB_OUTPUT"
+              echo "::warning::Shared scheme '$SCHEME' not found. Auto-selecting shared scheme '$AUTO_SCHEME'. If this is wrong, set SCHEME_OVERRIDE env or share the correct scheme."
+            else
+              echo "::error::Shared scheme '$SCHEME' not found, and no other shared schemes detected.")
+              echo "Fix: Open Xcode → Product → Scheme → Manage Schemes… → check 'Shared' for the correct scheme, then commit the generated .xcscheme file."
+              echo "Available schemes (from xcodebuild -list) below (if any):"
+              if [[ -n "${WS:-}" ]]; then xcodebuild -list -workspace "$WS" || true; fi
+              if [[ -n "${PRJ:-}" ]]; then xcodebuild -list -project   "$PRJ" || true; fi
+              exit 64
+            fi
+          fi
+
+      - name: Build (generic iOS Simulator, no code signing)
+        shell: bash
+        run: |
+          set -euo pipefail
+          DEST='generic/platform=iOS Simulator'
+          if [[ -n "${{ steps.detect.outputs.workspace || '' }}" ]]; then
+            xcodebuild \
+              -workspace "${{ steps.detect.outputs.workspace }}" \
+              -scheme    "${{ steps.detect.outputs.scheme }}" \
+              -configuration Release \
+              -destination "$DEST" \
+              CODE_SIGNING_ALLOWED=NO \
+              build
+          else
+            xcodebuild \
+              -project   "${{ steps.detect.outputs.project }}" \
+              -scheme    "${{ steps.detect.outputs.scheme }}" \
+              -configuration Release \
+              -destination "$DEST" \
+              CODE_SIGNING_ALLOWED=NO \
+              build
+          fi
+
+      - name: Zip dSYM artifacts (if any)
+        run: |
+          mkdir -p artifacts
+          DSYM_LIST=$(find ~/Library/Developer/Xcode/DerivedData -name "*.dSYM" 2>/dev/null || true)
+          if [[ -n "$DSYM_LIST" ]]; then
+            echo "$DSYM_LIST" | tr '\n' '\0' | xargs -0 zip -r artifacts/dsym-files.zip
+          else
+            echo "No dSYM files found."
+          fi
+
+      - name: Upload dSYM
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dsym-files
+          path: artifacts/dsym-files.zip
+          if-no-files-found: ignore
