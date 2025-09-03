@@ -1,83 +1,58 @@
-name: Upload dSYM Files
+name: macOS dSYM
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: macos-15
-
+    runs-on: macos-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Select Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
-        
-      - name: Show Xcode Version
+      - name: Xcode version
         run: xcodebuild -version
-        
-      - name: Setup Environment Variables
-        env:
-          DATADOG_CLIENT_TOKEN: ${{ secrets.DATADOG_CLIENT_TOKEN }}
+
+      - name: List schemes (workspace)
         run: |
-          echo "DATADOG_CLIENT_TOKEN=${DATADOG_CLIENT_TOKEN}" >> $GITHUB_ENV
-          
-      - name: Build iOS App and Generate dSYMs
-        env:
-          DATADOG_CLIENT_TOKEN: ${{ secrets.DATADOG_CLIENT_TOKEN }}
+          xcodebuild -list -workspace Meshtastic.xcworkspace || true
+          if [ ! -f "Meshtastic.xcodeproj/xcshareddata/xcschemes/Meshtastic.xcscheme" ] && \
+             [ ! -f "Meshtastic.xcworkspace/xcshareddata/xcschemes/Meshtastic.xcscheme" ]; then
+            echo "::error::Shared scheme 'Meshtastic' not found. Open Xcode → Manage Schemes → check 'Shared' and commit the .xcscheme file."
+            exit 1
+          fi
+
+      - name: Install xcpretty
+        run: sudo gem install xcpretty --no-document
+
+      - name: Build (Simulator, no code signing)
         run: |
-          # Create build directory
-          mkdir -p ./build/dSYMs
-          
-          # Build for iOS Simulator to generate dSYMs without code signing
+          set -o pipefail
           xcodebuild \
             -workspace Meshtastic.xcworkspace \
             -scheme Meshtastic \
             -configuration Release \
-            -destination 'generic/platform=iOS Simulator' \
-            -derivedDataPath ./build/DerivedData \
-            DATADOG_CLIENT_TOKEN="${DATADOG_CLIENT_TOKEN}" \
-            DEBUG_INFORMATION_FORMAT=dwarf-with-dsym \
-            CODE_SIGNING_REQUIRED=NO \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 15' \
             CODE_SIGNING_ALLOWED=NO \
-            build
-            
-      - name: Extract dSYMs from Build
-        run: |
-          # Find and copy all dSYM files from the build
-          find ./build/DerivedData -name "*.dSYM" -exec cp -R {} ./build/dSYMs/ \;
-          
-          # List what we found
-          echo "Found dSYM files:"
-          find ./build/dSYMs -name "*.dSYM" -type d
+            build | xcpretty -c
 
-      - name: Install Datadog CI
+      - name: Zip dSYM artifacts (if any)
         run: |
-          npm install -g @datadog/datadog-ci
-          
-      - name: Upload dSYMs to Datadog
-        env:
-          DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
-          DATADOG_SITE: us5.datadoghq.com
-        run: |
-          # Upload all dSYM files to Datadog
-          if [ -d "./build/dSYMs" ] && [ "$(find ./build/dSYMs -name "*.dSYM" -type d | wc -l)" -gt 0 ]; then
-            echo "Uploading dSYM files to Datadog..."
-            datadog-ci dsyms upload ./build/dSYMs
+          mkdir -p artifacts
+          dsym_count=$(find ~/Library/Developer/Xcode/DerivedData -name "*.dSYM" | wc -l | tr -d ' ')
+          if [ "$dsym_count" -gt 0 ]; then
+            find ~/Library/Developer/Xcode/DerivedData -name "*.dSYM" -print0 | xargs -0 zip -r artifacts/dsym-files.zip
           else
-            echo "No dSYM files found to upload"
-            exit 1
+            echo "No dSYM files found."
           fi
-          
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
+
+      - name: Upload dSYM
         if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: dsym-files
-          path: |
-            ./build/dSYMs
-            ./build/DerivedData
-          retention-days: 30
+          path: artifacts/dsym-files.zip
+          if-no-files-found: ignore
