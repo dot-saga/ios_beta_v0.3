@@ -132,8 +132,7 @@
 	<true/>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.meshtastic.app.background-processing</string>
-		<string>com.meshtastic.app.background-fetch</string>
+		<string>com.dot-SAGA.myBackgroundTask</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
