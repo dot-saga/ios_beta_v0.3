@@ -561,7 +561,7 @@
 		DDB8F4132A9EE5F000230ECE /* ChannelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelList.swift; sourceTree = "<group>"; };
 		DDBA45EC299ED78100DEEDDC /* MeshtasticDataModelV8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeshtasticDataModelV8.xcdatamodel; sourceTree = "<group>"; };
 		DDC1B8192AB5377B00C71E39 /* MessagesTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTips.swift; sourceTree = "<group>"; };
-		DDC2E15426CE248E0042C5E4 /* Meshtastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meshtastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC2E15426CE248E0042C5E4 /* dot SAGA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dot SAGA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC2E15726CE248E0042C5E4 /* MeshtasticApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshtasticApp.swift; sourceTree = "<group>"; };
 		DDC2E15B26CE248F0042C5E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		DDC2E15E26CE248F0042C5E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -1114,7 +1114,7 @@
 		DDC2E15526CE248E0042C5E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDC2E15426CE248E0042C5E4 /* Meshtastic.app */,
+				DDC2E15426CE248E0042C5E4 /* dot SAGA.app */,
 				DDDE59F429AF163D00490C6C /* WidgetsExtension.appex */,
 				25F5D5C72C4375A8008036E3 /* MeshtasticTests.xctest */,
 			);
@@ -1377,9 +1377,9 @@
 			productReference = 25F5D5C72C4375A8008036E3 /* MeshtasticTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DDC2E15326CE248E0042C5E4 /* Meshtastic */ = {
+		DDC2E15326CE248E0042C5E4 /* dot SAGA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDC2E17E26CE248F0042C5E4 /* Build configuration list for PBXNativeTarget "Meshtastic" */;
+			buildConfigurationList = DDC2E17E26CE248F0042C5E4 /* Build configuration list for PBXNativeTarget "dot SAGA" */;
 			buildPhases = (
 				BB450974275599CE00509624 /* ShellScript */,
 				DDC2E15026CE248E0042C5E4 /* Sources */,
@@ -1392,7 +1392,7 @@
 			dependencies = (
 				DDDE5A0229AF163E00490C6C /* PBXTargetDependency */,
 			);
-			name = Meshtastic;
+			name = "dot SAGA";
 			packageProductDependencies = (
 				DD0D3D212A55CEB10066DB71 /* CocoaMQTT */,
 				25A978B92C13F8ED0003AAE7 /* MeshtasticProtobufs */,
@@ -1404,7 +1404,7 @@
 				10D109F32E2047D600536CE6 /* DatadogTrace */,
 			);
 			productName = MeshtasticClient;
-			productReference = DDC2E15426CE248E0042C5E4 /* Meshtastic.app */;
+			productReference = DDC2E15426CE248E0042C5E4 /* dot SAGA.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DDDE59F329AF163D00490C6C /* WidgetsExtension */ = {
@@ -1478,7 +1478,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDC2E15326CE248E0042C5E4 /* Meshtastic */,
+				DDC2E15326CE248E0042C5E4 /* dot SAGA */,
 				DDDE59F329AF163D00490C6C /* WidgetsExtension */,
 				25F5D5C62C4375A8008036E3 /* MeshtasticTests */,
 			);
@@ -1818,7 +1818,7 @@
 /* Begin PBXTargetDependency section */
 		25F5D5CC2C4375A8008036E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDC2E15326CE248E0042C5E4 /* Meshtastic */;
+			target = DDC2E15326CE248E0042C5E4 /* dot SAGA */;
 			targetProxy = 25F5D5CB2C4375A8008036E3 /* PBXContainerItemProxy */;
 		};
 		DDDE5A0229AF163E00490C6C /* PBXTargetDependency */ = {
@@ -2018,6 +2018,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Meshtastic/Preview Content\"";
+				DEVELOPMENT_TEAM = W3S6NH4N5G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Meshtastic/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Meshtastic;
@@ -2028,7 +2029,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gvh.MeshtasticClient;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dot-SAGA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -2051,6 +2052,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Meshtastic/Preview Content\"";
+				DEVELOPMENT_TEAM = W3S6NH4N5G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Meshtastic/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Meshtastic;
@@ -2061,7 +2063,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gvh.MeshtasticClient;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dot-SAGA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -2081,6 +2083,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3S6NH4N5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
@@ -2092,7 +2095,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gvh.MeshtasticClient.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dot-SAGA.Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -2113,6 +2116,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W3S6NH4N5G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Widgets;
@@ -2124,7 +2128,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 2.7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = gvh.MeshtasticClient.Widgets;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dot-SAGA.Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -2156,7 +2160,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDC2E17E26CE248F0042C5E4 /* Build configuration list for PBXNativeTarget "Meshtastic" */ = {
+		DDC2E17E26CE248F0042C5E4 /* Build configuration list for PBXNativeTarget "dot SAGA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDC2E17F26CE248F0042C5E4 /* Debug */,

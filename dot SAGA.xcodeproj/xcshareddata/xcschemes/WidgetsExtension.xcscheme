@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
-               BuildableName = "Meshtastic.app"
-               BlueprintName = "Meshtastic"
+               BuildableName = "dot SAGA.app"
+               BlueprintName = "dot SAGA"
                ReferencedContainer = "container:Meshtastic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -60,8 +60,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
-            BuildableName = "Meshtastic.app"
-            BlueprintName = "Meshtastic"
+            BuildableName = "dot SAGA.app"
+            BlueprintName = "dot SAGA"
             ReferencedContainer = "container:Meshtastic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDC2E15326CE248E0042C5E4"
-            BuildableName = "Meshtastic.app"
-            BlueprintName = "Meshtastic"
+            BuildableName = "dot SAGA.app"
+            BlueprintName = "dot SAGA"
             ReferencedContainer = "container:Meshtastic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
