@@ -46,7 +46,7 @@ jobs:
           fi
 
           # 2) Resolve scheme
-          DEFAULT_SCHEME="Meshtastic"
+          DEFAULT_SCHEME="dot SAGA"
           SCHEME="${SCHEME_OVERRIDE:-$DEFAULT_SCHEME}"
 
           # Does a shared .xcscheme exist for the desired scheme?
