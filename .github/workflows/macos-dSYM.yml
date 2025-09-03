@@ -15,29 +15,56 @@ jobs:
       - name: Xcode version
         run: xcodebuild -version
 
-      - name: List schemes (workspace)
+      - name: Detect workspace/project & validate scheme
+        id: detect
+        shell: bash
         run: |
-          xcodebuild -list -workspace Meshtastic.xcworkspace || true
-          if [ ! -f "Meshtastic.xcodeproj/xcshareddata/xcschemes/Meshtastic.xcscheme" ] && \
-             [ ! -f "Meshtastic.xcworkspace/xcshareddata/xcschemes/Meshtastic.xcscheme" ]; then
-            echo "::error::Shared scheme 'Meshtastic' not found. Open Xcode → Manage Schemes → check 'Shared' and commit the .xcscheme file."
-            exit 1
+          set -euo pipefail
+          # Find workspace/project at repo root
+          WS=$(ls -1d *.xcworkspace 2>/dev/null | head -n1 || true)
+          PR=$(ls -1d *.xcodeproj    2>/dev/null | head -n1 || true)
+          if [[ -n "$WS" ]]; then
+            echo "workspace=$WS" >> $GITHUB_OUTPUT
+            xcodebuild -list -workspace "$WS" || true
+          elif [[ -n "$PR" ]]; then
+            echo "project=$PR" >> $GITHUB_OUTPUT
+            xcodebuild -list -project "$PR" || true
+          else
+            echo "::error::No .xcworkspace or .xcodeproj found at repo root.";
+            exit 64
           fi
 
-      - name: Install xcpretty
-        run: sudo gem install xcpretty --no-document
+          SCHEME="dot SAGA"    # adjust if your scheme name differs
+          echo "scheme=$SCHEME" >> $GITHUB_OUTPUT
+
+          # Verify shared scheme exists somewhere in the repo
+          if ! grep -Rqs "<Scheme" **/"$SCHEME".xcscheme ; then
+            echo "::error::Shared scheme '$SCHEME' not found. In Xcode: Product → Scheme → Manage Schemes… → check 'Shared', commit the .xcscheme file.";
+            exit 64
+          fi
 
       - name: Build (Simulator, no code signing)
+        shell: bash
         run: |
-          set -o pipefail
-          xcodebuild \
-            -workspace Meshtastic.xcworkspace \
-            -scheme Meshtastic \
-            -configuration Release \
-            -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 15' \
-            CODE_SIGNING_ALLOWED=NO \
-            build | xcpretty -c
+          set -euo pipefail
+          DEST='generic/platform=iOS Simulator'
+          if [[ -n "${{ steps.detect.outputs.workspace || '' }}" ]]; then
+            xcodebuild \
+              -workspace "${{ steps.detect.outputs.workspace }}" \
+              -scheme    "${{ steps.detect.outputs.scheme }}" \
+              -configuration Release \
+              -destination "$DEST" \
+              CODE_SIGNING_ALLOWED=NO \
+              build
+          else
+            xcodebuild \
+              -project   "${{ steps.detect.outputs.project }}" \
+              -scheme    "${{ steps.detect.outputs.scheme }}" \
+              -configuration Release \
+              -destination "$DEST" \
+              CODE_SIGNING_ALLOWED=NO \
+              build
+          fi
 
       - name: Zip dSYM artifacts (if any)
         run: |
