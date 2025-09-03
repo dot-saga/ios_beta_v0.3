@@ -7,7 +7,7 @@ on:
 
 env:
   # Change if you want to force a specific scheme name at runtime.
-  SCHEME_OVERRIDE: ""
+  SCHEME_OVERRIDE: "dot SAGA"
 
 jobs:
   build:
